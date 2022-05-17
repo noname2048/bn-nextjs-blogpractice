@@ -1,11 +1,11 @@
 import styles from "./AllPosts.module.scss";
 import PostsGrid from "./PostsGrid";
 
-export default function AllPosts(posts) {
+export default function AllPosts(props) {
   return (
     <section className={styles.posts}>
       <h1>All Posts</h1>
-      <PostsGrid posts={props.post} />
+      <PostsGrid posts={props.posts} />
     </section>
   );
 }
