@@ -12,7 +12,7 @@ const DUMMY_POSTS = [
   },
   {
     slug: "getting-started-with-nextjs1",
-    title: "Getting Started with NextJs",
+    title: "Getting Started with NextJs1",
     image: "getting-started-with-nextjs.jpg",
     excerpt:
       "NextJs is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.",
@@ -20,7 +20,7 @@ const DUMMY_POSTS = [
   },
   {
     slug: "getting-started-with-nextjs2",
-    title: "Getting Started with NextJs",
+    title: "Getting Started with NextJs2",
     image: "getting-started-with-nextjs.jpg",
     excerpt:
       "NextJs is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.",
@@ -28,7 +28,7 @@ const DUMMY_POSTS = [
   },
   {
     slug: "getting-started-with-nextjs3",
-    title: "Getting Started with NextJs",
+    title: "Getting Started with NextJs3",
     image: "getting-started-with-nextjs.jpg",
     excerpt:
       "NextJs is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.",
