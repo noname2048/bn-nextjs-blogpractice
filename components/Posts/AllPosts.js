@@ -1,3 +1,4 @@
+import { getStaticProps } from "../../pages";
 import styles from "./AllPosts.module.scss";
 import PostsGrid from "./PostsGrid";
 
