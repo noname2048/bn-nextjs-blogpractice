@@ -5,9 +5,9 @@ export default function PostsGrid(props) {
   const { posts } = props;
   return (
     <ul className={styles.grid}>
-      {posts.map((post, idx) => (
-        <PostItem key={post.slug} post={post} />
-      ))}
+      {posts
+        ? posts.map((post, idx) => <PostItem key={post.slug} post={post} />)
+        : "No content"}
     </ul>
   );
 }

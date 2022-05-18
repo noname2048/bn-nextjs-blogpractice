@@ -1,6 +1,6 @@
 import Hero from "../components/Homepage/Hero";
 import FeaturedPosts from "../components/Homepage/FeaturedPosts";
-import { getFeaturePosts } from "../lib/post-utils";
+import { getFeaturedPosts } from "../lib/post-utils";
 
 export default function Home(props) {
   return (
@@ -12,7 +12,7 @@ export default function Home(props) {
 }
 
 export function getStaticPosts() {
-  const featuredPosts = getFeaturePosts();
+  const featuredPosts = getFeaturedPosts();
 
   return {
     props: { posts: featuredPosts },
