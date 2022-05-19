@@ -1,4 +1,4 @@
-import styles from "./Homepage.module.scss";
+import styles from "./Hero.module.scss";
 import Image from "next/image";
 
 export default function Hero() {

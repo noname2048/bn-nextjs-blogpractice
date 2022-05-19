@@ -1,4 +1,4 @@
-import styles from "./Layout.module.scss";
+import styles from "./MainNavigation.module.scss";
 import Logo from "./Logo";
 import Link from "next/link";
 
