@@ -22,11 +22,11 @@ export default function PostContent(props) {
   };
 
   return (
-    <atricle className={styles.content}>
+    <article className={styles.content}>
       <PostHeader title={post.title} image={imagePath} />
       <ReactMarkdown components={customComponents}>
         {post.content}
       </ReactMarkdown>
-    </atricle>
+    </article>
   );
 }
