@@ -1,5 +1,5 @@
-import Hero from "../components/Homepage/Hero";
-import FeaturedPosts from "../components/Homepage/FeaturedPosts";
+import Hero from "../components/homepage/Hero";
+import FeaturedPosts from "../components/homepage/FeaturedPosts";
 import { getFeaturedPosts } from "../lib/post-utils";
 
 export default function Home(props) {

@@ -1,4 +1,4 @@
-import PostContent from "../../components/Posts/PostDetail/PostContent";
+import PostContent from "../../components/posts/post-detail/PostContent";
 import { getPostData, getPostsFiles } from "../../lib/post-utils";
 
 export default function PostDetailPage(props) {
