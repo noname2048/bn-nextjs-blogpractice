@@ -1,4 +1,8 @@
-export default function handler(req, res) {
+import { MongoClient } from "mongodb";
+
+const uri = process.env.MONGODB_URI;
+
+export default async function handler(req, res) {
   if (req.method === "POST") {
     const { email, name, message } = req.body;
 
@@ -19,6 +23,24 @@ export default function handler(req, res) {
       name,
       message,
     };
+
+    let client;
+    try {
+      client = await MongoClient.connect(uri);
+    } catch (error) {
+      res.status(500).json({ message: "Could not connect to database." });
+      return;
+    }
+
+    try {
+      const db = client.db("my-site");
+      const result = await db.collection("messages").insertOne(newMessage);
+      newMessage.id = result.insertedId;
+    } catch (error) {
+      res.status(500).json({ message: "Storing message failed!" });
+    } finally {
+      client.close();
+    }
 
     console.log(newMessage);
     res
