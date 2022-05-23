@@ -1,5 +1,5 @@
 import styles from "./FeaturedPosts.module.scss";
-import PostsGrid from "../Posts/PostsGrid";
+import PostsGrid from "../posts/PostsGrid";
 
 export default function FeaturedPosts(props) {
   return (
