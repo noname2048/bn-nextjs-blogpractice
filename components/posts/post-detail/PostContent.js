@@ -5,8 +5,10 @@ import Image from "next/image";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark";
 import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
+import scss from "react-syntax-highlighter/dist/cjs/languages/prism/scss";
 
 SyntaxHighlighter.registerLanguage("js", js);
+SyntaxHighlighter.registerLanguage("scss", scss);
 
 export default function PostContent(props) {
   const { post } = props;
