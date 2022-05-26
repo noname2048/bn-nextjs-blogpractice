@@ -4,7 +4,7 @@ const {
 } = require("next/constants");
 
 /** @type {import('next').NextConfig} */
-const nextConfig = (phase) => {
+const nextConfig = (phase, { defaultConfig }) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       reactStrictMode: true,
@@ -27,7 +27,20 @@ const nextConfig = (phase) => {
     };
   }
 
-  return {};
+  return {
+    reactStrictMode: true,
+    future: {
+      webpack5: true,
+    },
+    webpack(config) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      };
+
+      return config;
+    },
+  };
 };
 
 module.exports = nextConfig;
